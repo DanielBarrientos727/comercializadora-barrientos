@@ -1,756 +1,714 @@
 <!DOCTYPE html>
-
 <html lang="es-CO">
 
 <head>
-
+    <!-- =====================================================
+         1. CONFIGURACIÓN GENERAL
+         ===================================================== -->
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comercializadora Barrientos | Huevos de finca, verduras y hortalizas en Armenia</title>
 
-    <meta name="description" content="Comercializadora Barrientos en Armenia, Quindío. Huevos de finca, verduras y hortalizas. Atención de 8:00 a. m. a 10:00 p. m. Pedidos y domicilios por WhatsApp.">
+    <title>Comercializadora Barrientos | Huevos, verduras y hortalizas en Armenia</title>
 
-    <meta name="theme-color" content="#315C38">
+    <meta
+        name="description"
+        content="Comercializadora Barrientos en Armenia, Quindío. Huevos de finca, verduras y hortalizas. Atención de 8:00 a. m. a 10:00 p. m. Pedidos y domicilios por WhatsApp."
+    >
 
+    <meta name="theme-color" content="#E9B949">
     <meta name="robots" content="index, follow">
-
     <meta name="author" content="Comercializadora Barrientos">
 
+    <!-- Ubicación general del negocio -->
     <meta name="geo.region" content="CO-QUI">
-
     <meta name="geo.placename" content="Armenia, Quindío">
 
-<!-- Open Graph / redes sociales -->
-
+    <!-- =====================================================
+         2. METADATOS PARA REDES SOCIALES
+         ===================================================== -->
     <meta property="og:title" content="Comercializadora Barrientos | Armenia">
-
-    <meta property="og:description" content="Huevos de finca, verduras y hortalizas. Conoce nuestros productos y contáctanos por WhatsApp.">
-
+    <meta
+        property="og:description"
+        content="Huevos de finca, verduras y hortalizas. Conoce nuestros productos y contáctanos por WhatsApp."
+    >
     <meta property="og:type" content="website">
-
     <meta property="og:locale" content="es_CO">
-
     <meta property="og:site_name" content="Comercializadora Barrientos">
     <meta property="og:image:type" content="image/jpeg">
-
-    <meta property="og:image" content="https://images.pexels.com/photos/30805250/pexels-photo-30805250.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200">
-
+    <meta
+        property="og:image"
+        content="https://images.pexels.com/photos/30805250/pexels-photo-30805250.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+    >
     <meta property="og:image:alt" content="Huevos de finca organizados en una cubeta">
 
     <meta name="twitter:card" content="summary_large_image">
 
-<!-- Ícono de pestaña (SVG embebido, sin archivo extra) -->
+    <!-- =====================================================
+         3. FAVICON
+         Huevo sobre fondo amarillo.
+         ===================================================== -->
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E9B949'/%3E%3Cellipse cx='32' cy='34' rx='15' ry='21' fill='%23FFF9E8'/%3E%3Cellipse cx='27' cy='27' rx='4' ry='7' fill='%23FFFFFF' opacity='.8'/%3E%3C/svg%3E"
+    >
 
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23315C38'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' text-anchor='middle' fill='%23fff'%3ECB%3C/text%3E%3C/svg%3E">
+    <!-- =====================================================
+         4. OPTIMIZACIÓN DE RECURSOS
+         ===================================================== -->
+    <link rel="preconnect" href="https://images.pexels.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
 
-<!-- Conexiones anticipadas -->
+    <link
+        rel="preload"
+        as="image"
+        href="https://images.pexels.com/photos/30805250/pexels-photo-30805250.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600"
+        fetchpriority="high"
+    >
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-
-    <link rel="preconnect" href="https://images.pexels.com" crossorigin>
-
-    <link rel="preload" as="image" href="https://images.pexels.com/photos/30805250/pexels-photo-30805250.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" fetchpriority="high">
-
+    <!-- Hoja de estilos principal -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- JavaScript principal. defer permite cargar el HTML primero. -->
     <script src="./js/main.js" defer></script>
 
-<!-- Accesibilidad: enlace para saltar al contenido (solo visible al enfocar con teclado) -->
-
-    <style>
-
-        .skip-link {
-
-            position: absolute;
-
-            top: -100px;
-
-            left: 1rem;
-
-            z-index: 1000;
-
-            padding: .75rem 1.25rem;
-
-            background: #315C38;
-
-            color: #fff;
-
-            border-radius: 0 0 .5rem .5rem;
-
-            font-weight: 600;
-
-            text-decoration: none;
-
-        }
-
-        .skip-link:focus { top: 0; }
-
-    </style>
-
-<!-- Si JavaScript está desactivado, el contenido con animación se muestra igual -->
-
-    <noscript>
-
-        <style>
-
-            [data-reveal] { opacity: 1 !important; transform: none !important; }
-
-        </style>
-
-    </noscript>
-
-<!-- Datos estructurados para Google (negocio local) -->
-
+    <!-- =====================================================
+         5. DATOS ESTRUCTURADOS PARA BUSCADORES
+         Actualiza estos datos cuando cambien los del negocio.
+         ===================================================== -->
     <script type="application/ld+json">
-
     {
-
         "@context": "https://schema.org",
-
         "@type": "GroceryStore",
-
         "name": "Comercializadora Barrientos",
-
         "description": "Venta de huevos de finca, verduras y hortalizas en Armenia, Quindío.",
-
         "telephone": "+573213532665",
-
         "image": "https://images.pexels.com/photos/30805250/pexels-photo-30805250.jpeg?auto=compress&cs=tinysrgb&w=1200",
-
         "address": {
-
             "@type": "PostalAddress",
-
             "addressLocality": "Armenia",
-
             "addressRegion": "Quindío",
-
             "addressCountry": "CO"
-
         },
-
         "geo": {
-
             "@type": "GeoCoordinates",
-
             "latitude": 4.5118368,
-
             "longitude": -75.6964596
-
         },
-
         "openingHoursSpecification": {
-
             "@type": "OpeningHoursSpecification",
-
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
             "opens": "08:00",
-
             "closes": "22:00"
-
         },
-
         "priceRange": "$",
-
         "currenciesAccepted": "COP",
-
         "areaServed": "Sur de Armenia, Quindío",
-
         "hasMap": "https://www.google.com/maps/place/Comercializadora+barrientos/@4.511887,-75.700288,3554m/data=!3m1!1e3!4m6!3m5!1s0x8e38f50077b0550f:0x336737aaf509d5d5!8m2!3d4.5118368!4d-75.6964596"
-
     }
-
     </script>
-
 </head>
 
 <body>
 
+    <!-- =====================================================
+         6. BIBLIOTECA LOCAL DE ICONOS SVG
+         Los iconos se definen una vez y se reutilizan con <use>.
+         No requiere instalar una librería externa.
+         ===================================================== -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="svg-library" aria-hidden="true">
+
+        <!-- Huevo: identidad visual del negocio -->
+        <symbol id="icon-egg" viewBox="0 0 48 48">
+            <path
+                d="M24 5C16 5 9 19 9 29a15 15 0 0 0 30 0C39 19 32 5 24 5Z"
+                fill="currentColor"
+            />
+            <path
+                d="M18 17c-2 3-3 7-3 10"
+                stroke="#FFFFFF"
+                stroke-width="3"
+                stroke-linecap="round"
+                opacity=".85"
+            />
+        </symbol>
+
+        <!-- Símbolo de conversación para los enlaces de WhatsApp -->
+        <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+            <path
+                d="M20.5 11.6a8.1 8.1 0 0 1-11.9 7.1L4 20l1.3-3.9A8.1 8.1 0 1 1 20.5 11.6Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+            <path
+                d="M9.2 8.7c.2-.4.5-.4.8-.4h.4c.2 0 .3.1.4.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.1.1-.2.3-.1.5.2.4.6 1 1.2 1.5.6.5 1.2.9 1.6 1 .2.1.4 0 .5-.1l.7-.8c.2-.2.4-.2.6-.1l1.5.7c.2.1.3.2.3.4 0 .2-.1.8-.5 1.1-.4.4-1 .6-1.6.5-.6-.1-1.4-.4-2.3-.9-1.2-.7-2.1-1.6-2.7-2.4-.7-.9-1.1-1.8-1.1-2.5 0-.6.2-1.1.5-1.5Z"
+                fill="currentColor"
+            />
+        </symbol>
+
+        <!-- Flecha externa -->
+        <symbol id="icon-arrow-up-right" viewBox="0 0 24 24">
+            <path
+                d="M7 17 17 7M7 7h10v10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </symbol>
+
+        <!-- Ubicación -->
+        <symbol id="icon-map-pin" viewBox="0 0 24 24">
+            <path
+                d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+            />
+            <circle
+                cx="12"
+                cy="10"
+                r="2.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+            />
+        </symbol>
+
+        <!-- Horario -->
+        <symbol id="icon-clock" viewBox="0 0 24 24">
+            <circle
+                cx="12"
+                cy="12"
+                r="9"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+            />
+            <path
+                d="M12 7v5l3 2"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+            />
+        </symbol>
+
+        <!-- Teléfono -->
+        <symbol id="icon-phone" viewBox="0 0 24 24">
+            <path
+                d="M7 3h3l1.5 4-2 1.5a15 15 0 0 0 6 6l1.5-2 4 1.5v3c0 1.1-.9 2-2 2C10.7 19 5 13.3 5 7c0-2.2.9-4 2-4Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </symbol>
+
+        <!-- Entrega -->
+        <symbol id="icon-truck" viewBox="0 0 24 24">
+            <path
+                d="M3 6h11v11H3zM14 10h4l3 3v4h-7z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linejoin="round"
+            />
+            <circle cx="7.5" cy="18" r="1.8" fill="none" stroke="currentColor" stroke-width="1.7"/>
+            <circle cx="17.5" cy="18" r="1.8" fill="none" stroke="currentColor" stroke-width="1.7"/>
+        </symbol>
+
+        <!-- Hoja -->
+        <symbol id="icon-leaf" viewBox="0 0 24 24">
+            <path
+                d="M20 4c-8 0-14 3-14 10a6 6 0 0 0 6 6c7 0 8-8 8-16Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linejoin="round"
+            />
+            <path
+                d="M4 21c3-5 7-8 12-11"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+            />
+        </symbol>
+
+        <!-- Verificación -->
+        <symbol id="icon-check" viewBox="0 0 24 24">
+            <path
+                d="m5 12 4 4L19 6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </symbol>
+
+        <!-- Menú -->
+        <symbol id="icon-menu" viewBox="0 0 24 24">
+            <path
+                d="M4 7h16M4 12h16M4 17h16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+            />
+        </symbol>
+
+        <!-- Cierre -->
+        <symbol id="icon-close" viewBox="0 0 24 24">
+            <path
+                d="m6 6 12 12M18 6 6 18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+            />
+        </symbol>
+
+    </svg>
+
+    <!-- Enlace accesible para saltar directamente al contenido -->
     <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
 
-<!-- Barra superior -->
-
-    <div class="announcement" role="region" aria-label="Aviso informativo">
-
+    <!-- =====================================================
+         7. BARRA INFORMATIVA SUPERIOR
+         ===================================================== -->
+    <div class="announcement" role="region" aria-label="Información del negocio">
         <div class="container announcement-content">
 
-            <span>Productos frescos para tu hogar</span>
+            <span>
+                <svg class="icon" aria-hidden="true"><use href="#icon-leaf"></use></svg>
+                Productos para tu hogar
+            </span>
 
-            <span>Armenia, Quindío · Atención de 8:00 a. m. a 10:00 p. m.</span>
+            <span>
+                <svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>
+                Armenia, Quindío · Atención todos los días
+            </span>
 
         </div>
-
     </div>
 
-<!-- Navegación -->
-
+    <!-- =====================================================
+         8. ENCABEZADO Y NAVEGACIÓN
+         ===================================================== -->
     <header class="site-header">
-
         <div class="container header-content">
 
+            <!-- Logotipo -->
             <a href="#inicio" class="brand" aria-label="Comercializadora Barrientos, ir al inicio">
 
-                <span class="brand-icon" aria-hidden="true">CB</span>
+                <span class="brand-icon" aria-hidden="true">
+                    <svg class="icon icon-egg"><use href="#icon-egg"></use></svg>
+                </span>
 
                 <span class="brand-text">
-
                     <strong>COMERCIALIZADORA</strong>
-
                     <span>BARRIENTOS</span>
-
                 </span>
 
             </a>
 
+            <!-- Botón del menú móvil -->
             <button
-
                 type="button"
-
                 class="menu-toggle"
-
                 id="menu-toggle"
-
                 aria-label="Abrir menú"
-
                 aria-expanded="false"
-
                 aria-controls="navigation"
-
             >
+                <svg class="icon menu-open-icon" aria-hidden="true">
+                    <use href="#icon-menu"></use>
+                </svg>
 
-                <span></span>
-
-                <span></span>
-
-                <span></span>
-
+                <svg class="icon menu-close-icon" aria-hidden="true">
+                    <use href="#icon-close"></use>
+                </svg>
             </button>
 
+            <!-- Enlaces principales -->
             <nav class="navigation" id="navigation" aria-label="Navegación principal">
 
                 <a href="#inicio">Inicio</a>
-
                 <a href="#productos">Productos</a>
-
                 <a href="#precios">Precios</a>
-
                 <a href="#nosotros">Nosotros</a>
-
                 <a href="#ubicacion">Ubicación</a>
 
                 <a
-
-                    href="https://wa.me/573213532665?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20productos%20de%20Comercializadora%20Barrientos."
-
+                    href="https://wa.me/573213532665"
                     class="nav-contact"
-
                     target="_blank"
-
                     rel="noopener noreferrer"
-
-                    aria-label="Contáctanos por WhatsApp (se abre en una pestaña nueva)"
-
                     data-whatsapp="Hola, quiero información sobre los productos de Comercializadora Barrientos."
-
                 >
-
+                    <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
                     Contáctanos
-
                 </a>
 
             </nav>
-
         </div>
-
     </header>
 
+    <!-- =====================================================
+         9. CONTENIDO PRINCIPAL
+         ===================================================== -->
     <main id="contenido">
 
-<!-- Presentación principal -->
-
+        <!-- Presentación principal -->
         <section class="hero" id="inicio" aria-labelledby="titulo-hero">
-
             <div class="container hero-content">
 
                 <div class="hero-text" data-reveal>
 
-                    <span class="eyebrow">
-
-                        ARMENIA · QUINDÍO · COLOMBIA
-
-                    </span>
+                    <span class="eyebrow">ARMENIA · QUINDÍO · COLOMBIA</span>
 
                     <h1 id="titulo-hero">
-
                         Productos frescos,
-
                         <span>cerca de ti.</span>
-
                     </h1>
 
                     <p class="hero-description">
-
                         Huevos de finca, verduras y hortalizas para tu hogar.
-
                         Atención cercana y productos para el día a día.
-
                     </p>
 
                     <div class="hero-actions">
 
                         <a
-
-                            href="https://wa.me/573213532665?text=Hola%2C%20quiero%20consultar%20los%20productos%20y%20precios%20de%20Comercializadora%20Barrientos."
-
+                            href="https://wa.me/573213532665"
                             class="button button-primary"
-
                             target="_blank"
-
                             rel="noopener noreferrer"
-
-                            aria-label="Pedir por WhatsApp (se abre en una pestaña nueva)"
-
                             data-whatsapp="Hola, quiero consultar los productos y precios de Comercializadora Barrientos."
-
                         >
-
+                            <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
                             Pedir por WhatsApp
-
-                            <span aria-hidden="true">↗</span>
-
+                            <svg class="icon icon-small" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg>
                         </a>
 
                         <a href="#productos" class="button button-secondary">
-
                             Ver productos
-
                         </a>
 
                     </div>
 
+                    <!-- Características principales -->
                     <div class="hero-information" role="list">
 
                         <div class="information-item" role="listitem">
-
-                            <span class="information-icon" aria-hidden="true">✓</span>
-
+                            <svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>
                             <span>Huevos de finca</span>
-
                         </div>
 
                         <div class="information-item" role="listitem">
-
-                            <span class="information-icon" aria-hidden="true">✓</span>
-
+                            <svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>
                             <span>Verduras y hortalizas</span>
-
                         </div>
 
                         <div class="information-item" role="listitem">
-
-                            <span class="information-icon" aria-hidden="true">✓</span>
-
+                            <svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>
                             <span>Atención directa</span>
-
                         </div>
 
                     </div>
-
                 </div>
 
+                <!-- Imagen principal -->
                 <div class="hero-image-container" data-reveal>
 
                     <div class="hero-image">
-
                         <img
-
                             src="https://images.pexels.com/photos/30805250/pexels-photo-30805250.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600"
-
                             alt="Huevos de finca organizados en una cubeta"
-
                             width="1600"
-
                             height="1067"
-
                             decoding="async"
-
                             fetchpriority="high"
-
                         >
-
                     </div>
 
                     <div class="hero-image-label">
-
-                        <span class="label-icon" aria-hidden="true">✳</span>
+                        <span class="hero-label-icon" aria-hidden="true">
+                            <svg class="icon"><use href="#icon-egg"></use></svg>
+                        </span>
 
                         <div>
-
                             <strong>Comercializadora Barrientos</strong>
-
                             <span>Productos para tu hogar</span>
-
                         </div>
-
                     </div>
 
-                    <div class="hero-decoration" aria-hidden="true"></div>
-
                 </div>
-
             </div>
-
         </section>
 
-<!-- Franja informativa -->
-
-        <section class="benefits" aria-label="Resumen de lo que ofrecemos">
-
+        <!-- Franja de características -->
+        <section class="benefits" aria-label="Resumen de nuestros servicios">
             <div class="container benefits-content">
 
-                <div>
-
-                    <span class="benefit-number" aria-hidden="true">01</span>
-
+                <div class="benefit-item">
+                    <span class="benefit-number">01</span>
                     <p>Huevos de finca</p>
-
                 </div>
 
-                <div>
-
-                    <span class="benefit-number" aria-hidden="true">02</span>
-
+                <div class="benefit-item">
+                    <span class="benefit-number">02</span>
                     <p>Productos frescos</p>
-
                 </div>
 
-                <div>
-
-                    <span class="benefit-number" aria-hidden="true">03</span>
-
+                <div class="benefit-item">
+                    <span class="benefit-number">03</span>
                     <p>Atención por WhatsApp</p>
-
                 </div>
 
             </div>
-
         </section>
 
-<!-- Productos -->
-
+        <!-- =================================================
+             10. PRODUCTOS
+             ================================================= -->
         <section class="section products-section" id="productos" aria-labelledby="titulo-productos">
-
             <div class="container">
 
                 <div class="section-heading" data-reveal>
-
                     <span class="eyebrow">LO QUE TENEMOS PARA TI</span>
 
                     <h2 id="titulo-productos">
-
                         Nuestros <span>productos</span>
-
                     </h2>
 
                     <p>
-
                         Encuentra huevos de finca, verduras y hortalizas.
-
                         Consulta disponibilidad directamente con nosotros.
-
                     </p>
-
                 </div>
 
                 <div class="products-grid">
 
-<!-- Huevos -->
-
+                    <!-- Producto: huevos -->
                     <article class="product-card" data-reveal>
 
                         <div class="product-image">
-
                             <img
-
                                 src="https://images.pexels.com/photos/10111498/pexels-photo-10111498.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
-
                                 alt="Huevos de finca en una cubeta"
-
                                 width="1200"
-
                                 height="800"
-
                                 loading="lazy"
-
                                 decoding="async"
-
                             >
 
-                            <span class="product-tag">Destacado</span>
-
+                            <span class="product-tag">Producto destacado</span>
                         </div>
 
                         <div class="product-information">
-
                             <span class="product-category">PRODUCTO PRINCIPAL</span>
 
                             <h3>Huevos de finca</h3>
 
                             <p>
-
                                 Disponibles en diferentes clasificaciones:
-
                                 A, AA, AAA y SUPER.
-
                             </p>
 
-                            <a href="#precios" class="text-link" aria-label="Consultar precios de los huevos de finca">
-
-                                Consultar precios →
-
+                            <a href="#precios" class="text-link">
+                                Consultar precios
+                                <svg class="icon icon-small" aria-hidden="true">
+                                    <use href="#icon-arrow-up-right"></use>
+                                </svg>
                             </a>
-
                         </div>
-
                     </article>
 
-<!-- Verduras -->
-
+                    <!-- Producto: verduras -->
                     <article class="product-card" data-reveal>
 
                         <div class="product-image">
-
                             <img
-
                                 src="https://images.unsplash.com/photo-1632776350300-11016768b521?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
-
                                 alt="Verduras frescas organizadas en un mercado"
-
                                 width="1200"
-
                                 height="800"
-
                                 loading="lazy"
-
                                 decoding="async"
-
                             >
-
                         </div>
 
                         <div class="product-information">
-
                             <span class="product-category">PRODUCTOS FRESCOS</span>
 
                             <h3>Verduras</h3>
 
                             <p>
-
                                 Variedad de verduras para acompañar
-
                                 tus comidas y preparaciones.
-
                             </p>
 
                             <a
-
-                                href="https://wa.me/573213532665?text=Hola%2C%20quisiera%20consultar%20qu%C3%A9%20verduras%20tienen%20disponibles."
-
+                                href="https://wa.me/573213532665"
                                 class="text-link"
-
                                 target="_blank"
-
                                 rel="noopener noreferrer"
-
-                                aria-label="Consultar disponibilidad de verduras por WhatsApp (se abre en una pestaña nueva)"
-
                                 data-whatsapp="Hola, quisiera consultar qué verduras tienen disponibles."
-
                             >
-
-                                Consultar disponibilidad →
-
+                                Consultar disponibilidad
+                                <svg class="icon icon-small" aria-hidden="true">
+                                    <use href="#icon-arrow-up-right"></use>
+                                </svg>
                             </a>
-
                         </div>
-
                     </article>
 
-<!-- Hortalizas -->
-
+                    <!-- Producto: hortalizas -->
                     <article class="product-card" data-reveal>
 
                         <div class="product-image">
-
                             <img
-
                                 src="https://images.pexels.com/photos/31404675/pexels-photo-31404675.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
-
                                 alt="Selección de productos agrícolas frescos"
-
                                 width="1200"
-
                                 height="800"
-
                                 loading="lazy"
-
                                 decoding="async"
-
                             >
-
                         </div>
 
                         <div class="product-information">
-
                             <span class="product-category">PRODUCTOS FRESCOS</span>
 
                             <h3>Hortalizas</h3>
 
                             <p>
-
                                 Productos agrícolas para tu cocina.
-
                                 Pregunta por las opciones disponibles.
-
                             </p>
 
                             <a
-
-                                href="https://wa.me/573213532665?text=Hola%2C%20quisiera%20consultar%20qu%C3%A9%20hortalizas%20tienen%20disponibles."
-
+                                href="https://wa.me/573213532665"
                                 class="text-link"
-
                                 target="_blank"
-
                                 rel="noopener noreferrer"
-
-                                aria-label="Consultar disponibilidad de hortalizas por WhatsApp (se abre en una pestaña nueva)"
-
                                 data-whatsapp="Hola, quisiera consultar qué hortalizas tienen disponibles."
-
                             >
-
-                                Consultar disponibilidad →
-
+                                Consultar disponibilidad
+                                <svg class="icon icon-small" aria-hidden="true">
+                                    <use href="#icon-arrow-up-right"></use>
+                                </svg>
                             </a>
-
                         </div>
-
                     </article>
 
                 </div>
-
             </div>
-
         </section>
 
-<!-- Precios -->
-
+        <!-- =================================================
+             11. PRECIOS DE LOS HUEVOS
+             El contenido de las tarjetas se genera desde main.js.
+             ================================================= -->
         <section class="section prices-section" id="precios" aria-labelledby="titulo-precios">
-
             <div class="container">
 
                 <div class="section-heading" data-reveal>
-
                     <span class="eyebrow">NUESTROS PRECIOS</span>
 
                     <h2 id="titulo-precios">
-
                         Huevos de <span>finca</span>
-
                     </h2>
 
                     <p>
-
-                        Escoge la clasificación que buscas.
-
-                        También puedes consultar por media cubeta, docena o unidad.
-
+                        Consulta las diferentes clasificaciones y presentaciones.
+                        También puedes preguntar por media cubeta, docena o unidad.
                     </p>
-
                 </div>
 
                 <div class="price-introduction">
 
-                    <div>
-
-                        <span class="price-icon" aria-hidden="true">🥚</span>
+                    <div class="price-introduction-main">
+                        <span class="price-icon" aria-hidden="true">
+                            <svg class="icon"><use href="#icon-egg"></use></svg>
+                        </span>
 
                         <div>
-
                             <strong>Presentaciones disponibles</strong>
-
                             <p>Cubeta de 30, media cubeta de 15, docena y unidad.</p>
-
                         </div>
-
                     </div>
 
-                    <span class="price-currency">PRECIOS EN COP</span>
+                    <span class="price-currency">PRECIOS EN PESOS COLOMBIANOS (COP)</span>
 
                 </div>
 
-<!-- JavaScript genera las tarjetas de precios -->
-
-                <div class="egg-prices-grid" id="egg-prices" aria-live="polite" aria-busy="false">
+                <!-- JavaScript inserta aquí las tarjetas de precios -->
+                <div
+                    class="egg-prices-grid"
+                    id="egg-prices"
+                    aria-live="polite"
+                    aria-busy="false"
+                >
                     <p class="price-fallback">
                         Consulta los precios actualizados y la disponibilidad por
-                        <a href="https://wa.me/573213532665?text=Hola%2C%20quiero%20consultar%20los%20precios%20actualizados%20de%20los%20huevos%20de%20finca." target="_blank" rel="noopener noreferrer">WhatsApp</a>.
+                        <a
+                            href="https://wa.me/573213532665"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-whatsapp="Hola, quiero consultar los precios actualizados de los huevos de finca."
+                        >
+                            WhatsApp
+                        </a>.
                     </p>
                 </div>
-
-                <p class="price-note">
-
-                    Los valores de media cubeta y docena son referencias
-
-                    calculadas con el precio por huevo. Confirma el pedido
-
-                    y la disponibilidad por WhatsApp.
-
-                </p>
+                
+<p class="price-note">
+    La docena se calcula según el precio por unidad y la media cubeta
+    corresponde a la mitad del precio de la cubeta completa.
+    Consulta la disponibilidad antes de realizar tu pedido.
+</p>
 
             </div>
-
         </section>
 
-<!-- Nosotros -->
-
+        <!-- =================================================
+             12. SOBRE EL NEGOCIO
+             ================================================= -->
         <section class="section about-section" id="nosotros" aria-labelledby="titulo-nosotros">
-
             <div class="container about-content">
 
                 <div class="about-image" data-reveal>
-
                     <img
-
-                        src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
-
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fBqs4VIEcn506aG9jBBU2WclhxYGTc_wlz8RZ8t5DA&s=10"
                         alt="Paisaje natural de montañas y campo"
-
                         width="1200"
-
                         height="800"
-
                         loading="lazy"
-
                         decoding="async"
-
                     >
 
                     <div class="about-image-caption">
-
                         <span>Comercializadora Barrientos</span>
-
                         <strong>Armenia, Quindío</strong>
-
                     </div>
-
                 </div>
 
                 <div class="about-text" data-reveal>
@@ -758,339 +716,311 @@
                     <span class="eyebrow">SOMOS COMERCIALIZADORA BARRIENTOS</span>
 
                     <h2 id="titulo-nosotros">
-
                         Un negocio familiar,
-
                         <span>cerca de nuestra comunidad.</span>
-
                     </h2>
 
                     <p>
-
                         Somos un establecimiento comercial ubicado en
-
                         Armenia, Quindío, dedicado a la venta de huevos
-
                         de finca, verduras y hortalizas.
-
                     </p>
 
                     <p>
-
                         Queremos ofrecer a nuestros clientes una atención
-
                         cercana, información clara sobre nuestros productos
-
                         y una manera sencilla de realizar sus consultas.
-
                     </p>
 
                     <a
-
-                        href="https://wa.me/573213532665?text=Hola%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20Comercializadora%20Barrientos."
-
+                        href="https://wa.me/573213532665"
                         class="button button-primary"
-
                         target="_blank"
-
                         rel="noopener noreferrer"
-
-                        aria-label="Conoce nuestros productos, escríbenos por WhatsApp (se abre en una pestaña nueva)"
-
                         data-whatsapp="Hola, quiero conocer más sobre Comercializadora Barrientos."
-
                     >
-
-                        Conoce nuestros productos ↗
-
+                        <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+                        Conoce nuestros productos
+                        <svg class="icon icon-small" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg>
                     </a>
 
                 </div>
-
             </div>
-
         </section>
 
-<!-- Domicilios -->
-
+        <!-- =================================================
+             13. DOMICILIOS Y ENTREGAS
+             ================================================= -->
         <section class="delivery-section" aria-labelledby="titulo-domicilios">
-
             <div class="container delivery-content">
 
-                <div class="delivery-symbol" aria-hidden="true">⌖</div>
+                <div class="delivery-symbol" aria-hidden="true">
+                    <svg class="icon"><use href="#icon-truck"></use></svg>
+                </div>
 
                 <div class="delivery-text">
-
                     <span class="eyebrow">SERVICIO DE ENTREGA</span>
 
                     <h2 id="titulo-domicilios">Estamos cerca de ti.</h2>
 
                     <p>
-
                         Contamos con entregas en el sector sur de Armenia.
-
                         Consulta por WhatsApp si tu dirección está dentro
-
                         de nuestra zona de cobertura y pregunta por el costo.
-
                     </p>
-
                 </div>
 
                 <a
-
-                    href="https://wa.me/573213532665?text=Hola%2C%20quisiera%20consultar%20si%20realizan%20entregas%20en%20mi%20direcci%C3%B3n%20al%20sur%20de%20Armenia%20y%20cu%C3%A1l%20es%20el%20costo."
-
+                    href="https://wa.me/573213532665"
                     class="button button-dark"
-
                     target="_blank"
-
                     rel="noopener noreferrer"
-
-                    aria-label="Consultar domicilio por WhatsApp (se abre en una pestaña nueva)"
-
                     data-whatsapp="Hola, quisiera consultar si realizan entregas en mi dirección al sur de Armenia y cuál es el costo."
-
                 >
-
-                    Consultar domicilio ↗
-
+                    <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+                    Consultar domicilio
+                    <svg class="icon icon-small" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg>
                 </a>
 
             </div>
-
         </section>
 
-<!-- Ubicación -->
-
+        <!-- =================================================
+             14. UBICACIÓN Y HORARIOS
+             ================================================= -->
         <section class="section location-section" id="ubicacion" aria-labelledby="titulo-ubicacion">
-
             <div class="container">
 
                 <div class="section-heading" data-reveal>
-
                     <span class="eyebrow">ENCUÉNTRANOS</span>
 
                     <h2 id="titulo-ubicacion">
-
                         Nuestra <span>ubicación</span>
-
                     </h2>
 
-                    <p>
-
-                        Visítanos en Armenia, Quindío.
-
-                    </p>
-
+                    <p>Visítanos en Armenia, Quindío.</p>
                 </div>
 
                 <div class="location-content">
 
+                    <!-- Información de contacto -->
                     <div class="location-information" data-reveal>
 
                         <div class="location-detail">
-
-                            <span class="detail-icon" aria-hidden="true">⌖</span>
+                            <span class="detail-icon" aria-hidden="true">
+                                <svg class="icon"><use href="#icon-map-pin"></use></svg>
+                            </span>
 
                             <div>
-
                                 <strong>Dirección de referencia</strong>
-
                                 <p>Bosques de Pinares, Armenia, Quindío.</p>
-
                             </div>
-
                         </div>
 
                         <div class="location-detail">
-
-                            <span class="detail-icon" aria-hidden="true">◷</span>
+                            <span class="detail-icon" aria-hidden="true">
+                                <svg class="icon"><use href="#icon-clock"></use></svg>
+                            </span>
 
                             <div>
-
                                 <strong>Horario de atención</strong>
-
                                 <p>
-
-                                    <time datetime="08:00">8:00 a. m.</time> –
-
+                                    <time datetime="08:00">8:00 a. m.</time>
+                                    –
                                     <time datetime="22:00">10:00 p. m.</time>
-
                                 </p>
-
+                                <span class="detail-note">Todos los días</span>
                             </div>
-
                         </div>
 
                         <div class="location-detail">
-
-                            <span class="detail-icon" aria-hidden="true">☎</span>
+                            <span class="detail-icon" aria-hidden="true">
+                                <svg class="icon"><use href="#icon-whatsapp"></use></svg>
+                            </span>
 
                             <div>
-
                                 <strong>WhatsApp</strong>
-
-                                <p><a href="tel:+573213532665">321 353 2665</a></p>
-
+                                <p>
+                                    <a href="tel:+573213532665">321 353 2665</a>
+                                </p>
                             </div>
-
                         </div>
 
                         <a
-
                             href="https://www.google.com/maps/place/Comercializadora+barrientos/@4.511887,-75.700288,3554m/data=!3m1!1e3!4m6!3m5!1s0x8e38f50077b0550f:0x336737aaf509d5d5!8m2!3d4.5118368!4d-75.6964596"
-
                             class="button button-primary location-button"
-
                             target="_blank"
-
                             rel="noopener noreferrer"
-
-                            aria-label="Abrir ubicación en Google Maps (se abre en una pestaña nueva)"
-
                         >
-
-                            Abrir en Google Maps ↗
-
+                            <svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>
+                            Abrir en Google Maps
+                            <svg class="icon icon-small" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg>
                         </a>
 
                     </div>
 
+                    <!-- Mapa -->
                     <div class="map-container" data-reveal>
-
                         <iframe
-
                             title="Mapa con la ubicación de Comercializadora Barrientos en Armenia, Quindío"
-
                             src="https://maps.google.com/maps?q=4.5118368,-75.6964596&amp;z=16&amp;output=embed"
-
-                            width="100%"
-
-                            height="100%"
-
-                            style="border:0;"
-
                             loading="lazy"
-
                             referrerpolicy="no-referrer-when-downgrade"
-
                             allowfullscreen
-
                         ></iframe>
-
                     </div>
 
                 </div>
-
             </div>
-
         </section>
 
-<!-- Contacto -->
-
+        <!-- =================================================
+             15. LLAMADO FINAL A LA ACCIÓN
+             ================================================= -->
         <section class="contact-section" id="contacto" aria-labelledby="titulo-contacto">
-
             <div class="container contact-content">
 
                 <span class="eyebrow">ESTAMOS PARA ATENDERTE</span>
 
-                <h2 id="titulo-contacto">
-
-                    ¿Qué necesitas hoy?
-
-                </h2>
+                <h2 id="titulo-contacto">¿Qué necesitas hoy?</h2>
 
                 <p>
-
                     Escríbenos por WhatsApp para consultar precios,
-
                     disponibilidad de productos o domicilios.
-
                 </p>
 
                 <a
-
-                    href="https://wa.me/573213532665?text=Hola%2C%20estoy%20interesado%20en%20los%20productos%20de%20Comercializadora%20Barrientos.%20%C2%BFMe%20pueden%20brindar%20informaci%C3%B3n%20sobre%20precios%20y%20disponibilidad%3F"
-
+                    href="https://wa.me/573213532665"
                     class="button button-contact"
-
                     target="_blank"
-
                     rel="noopener noreferrer"
-
-                    aria-label="Hablar por WhatsApp (se abre en una pestaña nueva)"
-
                     data-whatsapp="Hola, estoy interesado en los productos de Comercializadora Barrientos. ¿Me pueden brindar información sobre precios y disponibilidad?"
-
                 >
-
-                    Hablar por WhatsApp ↗
-
+                    <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+                    Hablar por WhatsApp
+                    <svg class="icon icon-small" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg>
                 </a>
 
                 <span class="contact-number">
-
                     <a href="tel:+573213532665">+57 321 353 2665</a>
-
                 </span>
 
             </div>
-
         </section>
 
     </main>
 
-<!-- Pie de página -->
-
+    <!-- =====================================================
+         16. FOOTER
+         Incluye identidad, navegación, contacto y horario.
+         ===================================================== -->
     <footer class="footer">
+        <div class="container">
 
-        <div class="container footer-content">
+            <div class="footer-main">
 
-            <a href="#inicio" class="brand footer-brand" aria-label="Comercializadora Barrientos, volver al inicio">
+                <!-- Identidad del negocio -->
+                <div class="footer-brand-column">
 
-                <span class="brand-icon" aria-hidden="true">CB</span>
+                    <a
+                        href="#inicio"
+                        class="brand footer-brand"
+                        aria-label="Comercializadora Barrientos, volver al inicio"
+                    >
+                        <span class="brand-icon" aria-hidden="true">
+                            <svg class="icon icon-egg"><use href="#icon-egg"></use></svg>
+                        </span>
 
-                <span class="brand-text">
+                        <span class="brand-text">
+                            <strong>COMERCIALIZADORA</strong>
+                            <span>BARRIENTOS</span>
+                        </span>
+                    </a>
 
-                    <strong>COMERCIALIZADORA</strong>
+                    <p class="footer-description">
+                        Huevos de finca, verduras y hortalizas.
+                        Productos para tu hogar en Armenia, Quindío.
+                    </p>
 
-                    <span>BARRIENTOS</span>
+                    <a
+                        href="https://wa.me/573213532665"
+                        class="footer-whatsapp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-whatsapp="Hola, quiero comunicarme con Comercializadora Barrientos."
+                    >
+                        <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+                        Escríbenos por WhatsApp
+                    </a>
 
-                </span>
+                </div>
 
-            </a>
+                <!-- Navegación secundaria -->
+                <div class="footer-column">
+                    <h2>Explorar</h2>
 
-            <p>
+                    <nav class="footer-links" aria-label="Navegación del pie de página">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#productos">Productos</a>
+                        <a href="#precios">Precios</a>
+                        <a href="#nosotros">Nosotros</a>
+                        <a href="#ubicacion">Ubicación</a>
+                    </nav>
+                </div>
 
-                Huevos de finca, verduras y hortalizas.
+                <!-- Datos de contacto -->
+                <div class="footer-column">
+                    <h2>Contacto</h2>
 
-                Armenia, Quindío.
+                    <div class="footer-contact-item">
+                        <svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>
+                        <span>Bosques de Pinares, Armenia, Quindío.</span>
+                    </div>
 
-            </p>
+                    <div class="footer-contact-item">
+                        <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+                        <a href="tel:+573213532665">+57 321 353 2665</a>
+                    </div>
 
+                    <div class="footer-contact-item">
+                        <svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>
+                        <span>Todos los días, 8:00 a. m. – 10:00 p. m.</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Créditos y cierre -->
             <div class="footer-bottom">
 
-                <span>
-
+                <p>
                     © <span id="current-year">2026</span>
+                    Comercializadora Barrientos. Todos los derechos reservados.
+                </p>
 
-                    Comercializadora Barrientos.
-
-                </span>
-
-                <a href="#inicio">
-
-                    Volver arriba ↑
-
+                <a href="#inicio" class="back-to-top">
+                    Volver arriba
+                    <svg class="icon icon-small" aria-hidden="true">
+                        <use href="#icon-arrow-up-right"></use>
+                    </svg>
                 </a>
 
             </div>
 
         </div>
-
     </footer>
 
-</body>
+    <!-- Botón flotante de WhatsApp -->
+    <a
+        href="https://wa.me/573213532665"
+        class="floating-whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Escribir a Comercializadora Barrientos por WhatsApp"
+        data-whatsapp="Hola, quiero información sobre los productos de Comercializadora Barrientos."
+    >
+        <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+    </a>
 
+</body>
 </html>
